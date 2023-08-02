@@ -13,8 +13,7 @@ module.exports = (client) => {
         }
 
         client.on("ready", async () => {
-            await client.guilds.cache.get("1126438952157577266").commands.set(client.commandArray);
-            await client.application.commands.set([]);
+            await client.application.commands.set(client.commandArray);
         });
         
     };
